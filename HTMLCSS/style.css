@@ -1,0 +1,362 @@
+.header{
+    background-color: #CA86E1;
+   
+    
+}
+
+span.NOM{
+    color:#846F6F;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 800px;
+    
+
+}
+span{
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 20px;
+  
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.nav-links{
+    text-align: right;
+    padding: 10px 30px ;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li {
+    list-style: none;
+    display:inline-block;
+    padding: 10px 25px;
+    position: relative;
+    margin-left: -5px;
+    
+}
+.nav-links ul li ::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .3rem;
+    background-color: rgb(141, 14, 158);
+    left:0;
+    bottom: 0;
+
+    transform: scale(0,1);
+    transition: .4s;
+
+}
+.nav-links ul li :hover::before{
+    transform: scale(1,1);
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.msg{
+    background-color: #F3F1F1;
+    width: 1520px;
+    height: 200px;
+    display: flex;
+  justify-content: center;
+}
+.msg p {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    
+}
+
+.imag2{
+    margin-left: 1000px;
+}
+.search  {
+    font-size: 20px;
+    text-align: center;
+    display: inline;
+    position: absolute;
+     
+}
+.search select{
+  
+  font-size: 20px;
+
+}
+input[type=submit] {
+  width: 85px; 
+   height: 60px;
+   margin-left: 60px;
+   color: rgb(255, 255, 255);
+   background-color:#E5B1F1;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #bc94ca;
+    background-image: none;
+    
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: inline-flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #b983c4;
+    overflow: hidden;
+    border-radius: .25em;
+    margin-left: 100px;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #633172;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  h1{
+    text-align: center;
+  }
+  a{
+    font-size: 30px;
+  }
+
+  .offer{
+    display: inline-flex;
+    background-color: #F3F1F1;
+    margin-left: 400px;
+    width: 700px;
+    height: 200px;
+  }
+  .btn{
+    height: 40px;
+    width: 300px;
+    margin-left: 620px;
+    background-color: rgb(167, 73, 167);
+    color: seashell;
+
+  }
+  .btn1{
+    margin-left: -350px;
+    background-color: rgb(167, 73, 167);
+    color: seashell;
+    height: 40px;
+    width: 300px;
+  }
+
+  footer {
+    margin-top: 100px;
+    background-color: #CA86E1;
+    width: 100%;
+    bottom: 0;
+    /* position: fixed; */
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+footer div{
+    padding: 10px;
+    /* padding-top: 10px ; */
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.Frame{
+  height: 700px;
+  width: 900px;
+  background-color: #EAD4FB;
+  margin-top: 80px;
+  margin-left: 290px;
+  border-radius: 60px;
+  
+}
+.pass{
+  margin-left: 100px;
+  margin-top: 300px;
+  position: absolute;
+ 
+}
+.email{
+  margin-left: 100px;
+  display: inline;
+  margin-top: 100px;
+  
+  position: absolute;
+ 
+
+}
+input[type=text] {
+  height: 60px;
+  width: 600px;
+
+}
+.singin{
+  margin-left: 350px;
+  margin-top: 500px;
+  position: absolute;
+}
+.singup{
+  margin-top:600px ;
+  position: absolute;
+}
+ /*company design */
+ .compdesc{
+   background-color: #d099fa;
+   height: 60px;
+   width: 200px;
+   margin-top: 80px;
+   margin-left: 110px;
+ }
+.desc{
+  background-color: #F3F1F1 ;
+  height: 300px;
+  width: 1200px;
+  margin-top: 50px;
+  margin-left: 125px;
+  border-radius: 40px;
+  
+}
+.compoff{
+  background-color: #a0a0a0;
+   height: 60px;
+   width: 300px;
+   margin-top: 80px;
+   margin-left: 110px;
+
+}
+.offerX{
+    display: inline-flex;
+    background-color: #F3F1F1;
+    margin-left: 400px;
+    width: 700px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+ /*recruteur  design*/
+.set{
+  height: 600px;
+  width:950px;
+  background-color: rgb(215, 188, 238);
+  margin-top: 60px;
+  margin-left: 270px;
+  border-radius: 10px;
+}
+.bande{
+  height: 640px;
+  width: 80px;
+  background-color: rgb(96, 53, 124);
+  margin-left: 80px;
+  margin-top: -20px;
+  position: absolute;
+  border-color: white;
+  border-width: 20px;
+  border-radius: 10px;
+  
+}
+.nav-links2  ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 80px;
+  position: relative;
+}
+
+
+
+.nav-links2 ul li ::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: .3rem;
+  background-color: white;
+  left:0;
+  bottom: 0;
+
+  transform: scale(0,1);
+  transition: .4s;
+
+}
+.nav-links2 ul li :hover::before{
+  transform: scale(1,1);
+}
+
+.profile{
+  margin-top: 37px;
+  margin-left: 245px;
+}
+
+  
+input[type=button]{
+  height: 40px;
+  width: 100px;
+  margin-left: 470px;
+
+  }
+
+
+
+#stagiaire {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 700px;
+  margin-left: 200px;
+  margin-top: 50px;
+ 
+}
+
+#stagiaire td, #stagiaire th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#stagiaire tr:nth-child(even){background-color: #f2f2f2;}
+
+#stagiaire tr:hover {background-color: #d099fa;}
+
+#stagiaire th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
