@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+
+// Route::get('/offers','OfferController@index')->name('offers.index');
+// Route::get('/offers/{city}','OfferController@show')->name('offers.show');
+Route::get('/offers', 'App\Http\Controllers\OfferController@index');
+Route::get('/offers/{city}/{field}', 'App\Http\Controllers\OfferController@show');
