@@ -20,5 +20,11 @@ Route::get('/', function () {
 
 // Route::get('/offers','OfferController@index')->name('offers.index');
 // Route::get('/offers/{city}','OfferController@show')->name('offers.show');
-Route::get('/offers', 'App\Http\Controllers\OfferController@index');
-Route::get('/offers/{city}/{field}', 'App\Http\Controllers\OfferController@show');
+Route::get('/offers', 'App\Http\Controllers\OfferController@index')->name('offers.index');
+// Route::get('/offers/{city}/{field}', 'App\Http\Controllers\OfferController@show');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/offers/create', 'App\Http\Controllers\OfferController@create')->name('offers.create');
+Route::post('/offers', 'App\Http\Controllers\OfferController@store')->name('offers.store');

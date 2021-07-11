@@ -6,22 +6,24 @@
     <div class="container">
     <h1 class="my-5">Looking for an internship? find one by searching by:</h1>
     <div class="row my-5 pt-5">
+     <form action="/offers" method="GET">
         <div class="col-4">
-        <form action="">
+        @csrf
         <div class="select">
-            <select name="slct" id="slct">
+            <select name="city" id="city">
                 <option selected disabled>city</option>
                 <option value="1">casa</option>
                 <option value="2">Tanger</option>
-                <option value="3">Rabat</option>
+                <option value="rabat">rabat</option>
             </select>
         </div>
         </div>
         <div class="col-4">
         <div class="select">
-            <select name="slct" id="slct">
+            <select name="field" id="field">
                 <option selected disabled>field</option>
-                <option value="1">commerce et management/option>
+                <option value="1">1</option>
+                <option value="1">commerce et management</option>
                 <option value="2">gestion</option>
                 <option value="3">informatique</option>
             </select>        
