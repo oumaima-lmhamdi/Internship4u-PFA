@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Offer;
+use App\Models\User;
 class OfferController extends Controller
 {
     //
@@ -20,7 +21,7 @@ class OfferController extends Controller
               ->where('i_category_id', '=', $field)
               ->get();
   
-      return view('offers.show', ['offers' => $offers]);
+      return view('offers.index', ['offers' => $offers]);
       }
 
      public function create() {

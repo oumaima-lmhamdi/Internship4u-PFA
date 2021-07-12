@@ -26,5 +26,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//offers routes
 Route::get('/offers/create', 'App\Http\Controllers\OfferController@create')->name('offers.create');
 Route::post('/offers', 'App\Http\Controllers\OfferController@store')->name('offers.store');
+
+//applications routes
+// Route::get('/applications/create', 'App\Http\Controllers\ApplicationController@create')->name('applications.create');
+Route::post('/applications', 'App\Http\Controllers\ApplicationController@store')->name('applications.store');
+Route::get('/applications', 'App\Http\Controllers\ApplicationController@index')->name('applications.index');

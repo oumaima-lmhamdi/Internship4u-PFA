@@ -1,10 +1,12 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
 
 <div class="fluid-container">
     <div class="container">
     <h1 class="my-5">Looking for an internship? find one by searching by:</h1>
+    <a href="{{ 'applications.show' }}"><h1>APPLICATIONS</h1></a>
+
     <div class="row my-5 pt-5">
      <form action="/offers" method="GET">
         <div class="col-4">
@@ -81,11 +83,12 @@
                 <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Apply to this offer</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Apply to offer {{ $offer->i_title }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    <form>
+                    <form action="{{ route('applications.store') }}" method="POST">
+                    @csrf
                         <div class="row justify-content-between mx-5 py-3">
                             <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name" class="col-lg-5">
                             <input type="text" id="email" name="email" placeholder="Enter your Email Adress" class="col-lg-5">
@@ -113,7 +116,6 @@
 
     </div>
 </div>
-
 
  
 <a href="#" class="back"><- Back to home</a>

@@ -23,7 +23,7 @@ class CreateOffersTable extends Migration
             $table->text('i_description');
             $table->string('i_city');
             $table->integer('i_status');
-            $table->integer('i_salary');
+            $table->integer('i_salary');         
         });
     }
 

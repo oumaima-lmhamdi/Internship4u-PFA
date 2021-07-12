@@ -61,6 +61,17 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="status" class="col-md-4 col-form-label text-md-right">{{ __('Status') }}</label>             
+                            <div class="select">
+                                <select  id="status" class="form-control" name="status" required autocomplete="status">
+                                    <option selected disabled>status</option>
+                                    <option value="internship seeker">internship seeker</option>
+                                    <option value="recuiter">recuiter</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

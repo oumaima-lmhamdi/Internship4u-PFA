@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+<!-- @extends('layouts.layout')
 
 @section('content')
 
@@ -93,4 +93,4 @@
 
  
 <a href="#" class="back"><- Back to home</a>
-@endsection
+@endsection -->
