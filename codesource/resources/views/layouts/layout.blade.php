@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -25,19 +24,7 @@
     </head>
 
     <body>
-    <div class="header">
-        <nav>
-            <img src="logoo.png" alt="website logo" height="100" width="100"><span class="NOM">Intership4U</span>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="">Help</a></li>
-                   
-                </ul>
-            </div>
-            <img src="4254469_connected_dots_hosting_managed_person_icon.png" alt="connected" height="100" width="100">
-          
-        </nav>
-    </div>
+    
 
     @yield('content')
     

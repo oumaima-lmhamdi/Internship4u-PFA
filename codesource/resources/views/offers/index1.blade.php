@@ -1,4 +1,5 @@
-@extends('layouts.app1')
+@extends('layouts.layout')
+<!-- @extends('layouts.app1') -->
 
 @section('content')
 
@@ -8,9 +9,9 @@
 
     <div class="row my-5 pt-5">
      <form action="/offers" method="GET">
-        <div class="col-1">
+        <div class="col-4">
         @csrf
-        <div class="select my-3">
+        <div class="select">
             <select name="city" id="city">
                 <option selected disabled>city</option>
                 <option value="1">casa</option>
@@ -19,8 +20,8 @@
             </select>
         </div>
         </div>
-        <div class="col-1">
-        <div class="select my-3">
+        <div class="col-4">
+        <div class="select">
             <select name="field" id="field">
                 <option selected disabled>field</option>
                 <option value="1">1</option>
@@ -30,7 +31,7 @@
             </select>        
         </div>
         </div>
-        <button type="submit" class="col-1 ms-auto" style="margin-left : 200px" value="Search">search</button>
+        <button type="submit" class="col-1 ms-auto" value="Search">search</button>
         </form>
     </div>
     </div>

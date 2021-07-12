@@ -1,4 +1,5 @@
-@extends('layouts.layout')
+<!-- @extends('layouts.layout') -->
+@extends('layouts.app1')
 
 @section('content')
 <div class="createoffer">

@@ -29,6 +29,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //offers routes
 Route::get('/offers/create', 'App\Http\Controllers\OfferController@create')->name('offers.create');
 Route::post('/offers', 'App\Http\Controllers\OfferController@store')->name('offers.store');
+// Route::get('/offers/home', 'App\Http\Controllers\OfferController@home')->name('offers.home');
 
 //applications routes
 // Route::get('/applications/create', 'App\Http\Controllers\ApplicationController@create')->name('applications.create');

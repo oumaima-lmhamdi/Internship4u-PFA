@@ -23,6 +23,14 @@ class OfferController extends Controller
   
       return view('offers.index', ['offers' => $offers]);
       }
+      public function home() {
+        error_log($city);
+        error_log($field);
+        $offers = Offer::select('*')
+                ->get();
+    
+        return view('home', ['offers' => $offers]);
+        }  
 
      public function create() {
         return view('offers.create');
