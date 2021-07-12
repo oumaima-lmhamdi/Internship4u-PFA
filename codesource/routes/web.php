@@ -34,3 +34,7 @@ Route::post('/offers', 'App\Http\Controllers\OfferController@store')->name('offe
 // Route::get('/applications/create', 'App\Http\Controllers\ApplicationController@create')->name('applications.create');
 Route::post('/applications', 'App\Http\Controllers\ApplicationController@store')->name('applications.store');
 Route::get('/applications', 'App\Http\Controllers\ApplicationController@index')->name('applications.index');
+
+//admin routes
+Route::get('/admin', 'App\Http\Controllers\UserController@index')->name('admin.index');
+Route::delete('/admin/{id}', 'App\Http\Controllers\UserController@destroy')->name('admin.destroy')->middleware('auth');

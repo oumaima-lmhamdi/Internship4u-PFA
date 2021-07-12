@@ -66,8 +66,8 @@
                             <div class="select">
                                 <select  id="status" class="form-control" name="status" required autocomplete="status">
                                     <option selected disabled>status</option>
-                                    <option value="internship seeker">internship seeker</option>
-                                    <option value="recuiter">recuiter</option>
+                                    <option value="0">internship seeker</option>
+                                    <option value="1">recuiter</option>
                                 </select>
                             </div>
                         </div>
